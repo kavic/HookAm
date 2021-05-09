@@ -46,7 +46,6 @@ public class HookUtil {
 
         Object gDefault = field.get(null);
 
-        //反射Singleton
         Class<?> singletonClass = Class.forName("android.util.Singleton");
         Field mInstanceField = singletonClass.getDeclaredField("mInstance");
         mInstanceField.setAccessible(true);
